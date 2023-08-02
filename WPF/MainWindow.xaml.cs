@@ -5,11 +5,30 @@ namespace WPF
 
     public partial class MainWindow : Window
     {
+        bool running = false;
         public MainWindow()
         {
             InitializeComponent();
-            nmhello.Text = "Hello world 2 ";
-            btrun.Content = "stop"; 
+         
+        }
+        private void Runbuttom(object sender , RoutedEventArgs e)
+        {
+            if (running)
+            {
+                // stop 
+                nmhello.Text = "stoping";
+                btrun.Content = "Run";
+            }
+            else
+            {
+                // run
+                nmhello.Text = "Running";
+                btrun.Content = "stop";
+            }
+
+            running =! running;
+
+                
         }
     }
 }
