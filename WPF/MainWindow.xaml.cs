@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Controls;
 
 namespace WPF
 {
@@ -28,7 +30,10 @@ namespace WPF
 
             running =! running;
 
-                
+                   /*< TextBox   Name = "nmhello"  Text = "hello world" FontSize = "35" />
+        < Button  Name = "btrun" Width = "100" Height = "50" VerticalAlignment = "Center"
+                 HorizontalAlignment = "Center"  Content = "Run"  FontSize = "20" Click = "Runbuttom" />*/
+
         }
     }
 }
