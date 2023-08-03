@@ -7,13 +7,13 @@ namespace WPF
 
     public partial class MainWindow : Window
     {
-        bool running = false;
+       // bool running = false;
         public MainWindow()
         {
             InitializeComponent();
          
         }
-        private void Runbuttom(object sender , RoutedEventArgs e)
+   /*     private void Runbuttom(object sender , RoutedEventArgs e)
         {
             if (running)
             {
@@ -32,8 +32,9 @@ namespace WPF
 
                    /*< TextBox   Name = "nmhello"  Text = "hello world" FontSize = "35" />
         < Button  Name = "btrun" Width = "100" Height = "50" VerticalAlignment = "Center"
-                 HorizontalAlignment = "Center"  Content = "Run"  FontSize = "20" Click = "Runbuttom" />*/
+                 HorizontalAlignment = "Center"  Content = "Run"  FontSize = "20" Click = "Runbuttom" />
+         
 
-        }
+        }*/
     }
 }
