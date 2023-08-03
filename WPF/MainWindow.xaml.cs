@@ -36,5 +36,31 @@ namespace WPF
          
 
         }*/
-    }
+
+/* <Grid.RowDefinitions>
+    <RowDefinition  Height="50"/>
+    <RowDefinition Height="350"/>
+    <RowDefinition  Height="50"/>
+</Grid.RowDefinitions>
+   <!--  menu bar -->
+<Rectangle Grid.Row="0" Fill="Blue"/>
+   <!-- Content panel-->
+<Grid Grid.Row="1">
+    <Grid.ColumnDefinitions >
+        <ColumnDefinition Width="20*" />
+        <ColumnDefinition Width="60*"/>
+        <ColumnDefinition Width="20*"/>
+    </Grid.ColumnDefinitions>
+    <Rectangle Fill="DarkBlue"/>
+    <Rectangle Grid.Column="1" Fill="DarkGray"/>
+    <Rectangle  Grid.Column="2" Fill="DarkBlue"/>
+</Grid>
+   <!--  Footer -->
+<Rectangle Grid.Row="2" Fill="Beige"/>
+
+
+*/
+
+
+}
 }
