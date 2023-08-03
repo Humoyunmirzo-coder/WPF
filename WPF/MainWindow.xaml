@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
+         xmlns:usertxt="clr-namespace:WPF.viuw.TexBox"
 
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="300">
@@ -17,7 +18,7 @@
             <RowDefinition/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="1" Width="250" Height="40"   />
+        <usertxt:Main    Grid.Row="1" Width="250" Height="40" />
         <TextBox Grid.Row="2" Width="250" Height="40" />
         <TextBox Grid.Row="3" Width="250" Height="40" />
         <TextBox Grid.Row="4" Width="250" Height="40" />
