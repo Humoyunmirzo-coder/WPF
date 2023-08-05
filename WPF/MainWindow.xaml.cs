@@ -14,10 +14,7 @@ namespace WPF
         {
                 InitializeComponent();
          }
-              private void btnAdd_Click (object sender, RoutedEventArgs e)
-        {
-            Leavenst.Items.Add(txtenty.Text);
-        }
+              
 
 
     }
