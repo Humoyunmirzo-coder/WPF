@@ -27,6 +27,10 @@ namespace WPF
             PropertyChanged?.Invoke( this, new PropertyChangedEventArgs("BoundText") );
             }
         }
+        private void btnset_Click (object sender, RoutedEventArgs e)
+        {
+            BoundText = "set from code ";
+        }
 
     }
 }
