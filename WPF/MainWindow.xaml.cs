@@ -5,7 +5,7 @@ using System.Windows.Controls;
 namespace WPF
 {
 
-    public partial class MainWindow : Window
+    public partial class MainWindow : UserControl
     {
        // bool running = false;
         public MainWindow()
