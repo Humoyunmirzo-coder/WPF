@@ -8,18 +8,15 @@
 
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="300">
-    <Grid >
 
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
             <RowDefinition/>
-            <RowDefinition />
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox  Name="TextInput" VerticalAlignment="Center" FontSize="16" Text="{Binding BoundText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}
-            "  Grid.Row="0" Width="250" Height="40" />
-        <Button Grid.Row="1" Name="bteresalt" Content="set" Width="100" Height="40" 
+        <Button Name="bntFree" Content="Free" Width="100" Height="40" 
                 Click="btnset_Click"/>
-        <TextBlock Grid.Row="2" Name="Resalt" FontSize="16" Text="{Binding BoundText}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Name="trbInfo" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
     </Grid>
 </Window>

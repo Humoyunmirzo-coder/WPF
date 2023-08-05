@@ -6,30 +6,28 @@ using System.ComponentModel;
 namespace WPF
 {
 
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class MainWindow : Window
     {
       
         public MainWindow()
         {
-            DataContext = this;
-            InitializeComponent();
+          
+                InitializeComponent();
          
-        }
-        private string  boundText ;
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        public string  BoundText 
-        {
-            get { return boundText; }
-            set { 
-                boundText = value;
-            PropertyChanged?.Invoke( this, new PropertyChangedEventArgs("BoundText") );
             }
-        }
-        private void btnset_Click (object sender, RoutedEventArgs e)
+          private void btnset_Click (object sender, RoutedEventArgs e)
         {
-            BoundText = "set from code ";
+           // MessageBox.Show(" Could not open file" , "EROR", MessageBoxButton.YesNo , MessageBoxImage.Error);
+           MessageBoxResult result =  MessageBox.Show(" Do you agre ? " , "Agrement", 
+               MessageBoxButton.YesNo , MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                trbInfo.Text = "Agreed";
+            }
+            else
+            {
+                trbInfo.Text = "Not Agre";
+            }
         }
 
     }
