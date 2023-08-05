@@ -11,7 +11,7 @@
 
     <Grid HorizontalAlignment="Left" Width="300">
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="70" />
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -19,9 +19,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Name="txtenty" Height="40" FontSize="16"/>
-        <Button  Grid.Column="1" Name="btnAdd" Width="50"  Content="Add" Click="btnAdd_Click" HorizontalAlignment="Left"/>
-        <Button  Grid.Column="1" Name="btnDelete" Width="50"  Content="Delete" Click="btnDelete_Click" HorizontalAlignment="Left" Margin="60.0"/>
-        <Button  Grid.Column="1" Name="btnClear" Width="50"  Content="Clear" Click="btnClear_Click" HorizontalAlignment="Left" Margin="120.0"/>
+        <Button  Grid.Column="1" Name="btnAdd" Width="35"  Content="Add" Click="btnAdd_Click" HorizontalAlignment="Left"/>
+        <Button  Grid.Column="1" Name="btnDelete" Width="35"  Content="Delete" Click="btnDelete_Click" HorizontalAlignment="Right" />
+        <Button  Grid.Column="1" Name="btnClear" Width="35"  Content="Clear" Click="btnClear_Click" HorizontalAlignment="Center" />
         <ListView  Name="Leavenst" Grid.Row="1" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

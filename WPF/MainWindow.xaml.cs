@@ -12,7 +12,6 @@ namespace WPF
       
         public MainWindow()
         {
-          
                 InitializeComponent();
          }
               private void btnAdd_Click (object sender, RoutedEventArgs e)
