@@ -2,6 +2,7 @@
 using static System.Net.Mime.MediaTypeNames;
 using System.Windows.Controls;
 using System.ComponentModel;
+using Microsoft.Win32;
 
 namespace WPF
 {
@@ -17,16 +18,17 @@ namespace WPF
             }
           private void btnset_Click (object sender, RoutedEventArgs e)
         {
-           // MessageBox.Show(" Could not open file" , "EROR", MessageBoxButton.YesNo , MessageBoxImage.Error);
-           MessageBoxResult result =  MessageBox.Show(" Do you agre ? " , "Agrement", 
-               MessageBoxButton.YesNo , MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.ShowDialog();
+            bool? seccess = fileDialog.ShowDialog();
+            if (seccess != null)
             {
-                trbInfo.Text = "Agreed";
+                string  path = fileDialog.FileName;
+                trbInfo.Text = path;
             }
             else
             {
-                trbInfo.Text = "Not Agre";
+                // did pik enything 
             }
         }
 
