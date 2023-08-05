@@ -14,23 +14,12 @@ namespace WPF
         {
           
                 InitializeComponent();
-         
-            }
-          private void btnset_Click (object sender, RoutedEventArgs e)
+         }
+              private void btnAdd_Click (object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.ShowDialog();
-            bool? seccess = fileDialog.ShowDialog();
-            if (seccess != null)
-            {
-                string  path = fileDialog.FileName;
-                trbInfo.Text = path;
-            }
-            else
-            {
-                // did pik enything 
-            }
+            Leavenst.Items.Add(txtenty.Text);
         }
+
 
     }
 }
