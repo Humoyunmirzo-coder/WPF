@@ -11,10 +11,13 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition />
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Rectangle Fill="Blue"/>
         <Rectangle Grid.Row="1" Fill="DarkBlue"/>
+
+        <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch" /> 
         <Rectangle Grid.Row="2" Fill="Yellow"/>
     </Grid> 
 </Window>
