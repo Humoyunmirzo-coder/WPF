@@ -4,47 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
-         xmlns:user="clr-namespace:WPF.viuw.TexBox"
 
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="300">
-
-    <Grid HorizontalAlignment="Left" Width="300">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70" />
-            <RowDefinition/>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Height="40" Width="75" Margin="2"  Content =" A" />
-            <Button Height="40" Width="75" Margin="2"  Content =" B" />
-            <Button Height="40" Width="75" Margin="2"  Content =" C" />
-        </StackPanel>
-        
-        <StackPanel Grid.Row="1" Margin="20">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Label Content="Label"/>
-                <TextBox Width="150" />
-                <Button Content="Go"/>
-            </StackPanel>  
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Label Content="Label"/>
-                <TextBox Width="150" />
-                <Button Content="Go"/>
-            </StackPanel>  
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Label Content="Label"/>
-                <TextBox Width="150" />
-                <Button Content="Go"/>
-            </StackPanel>
-    </StackPanel>
-        
-        <StackPanel Grid.Row="1" Margin="20">
-            <TextBox Width="150" Height="30" Margin="2"/>
-            <ComboBox Width="150" Height="30" Margin="2"/>
-            <TextBox Width="150" Height="30" Margin="2"/>
-            <TextBox Width="150" Height="30" Margin="2"/>
-            <TextBox Width="150" Height="30" Margin="2"/>
-            <TextBox Width="150" Height="30" Margin="2"/>
-        </StackPanel>
-    </Grid>
+        <Rectangle Fill="Blue"/>
+        <Rectangle Grid.Row="1" Fill="DarkBlue"/>
+        <Rectangle Grid.Row="2" Fill="Yellow"/>
+    </Grid> 
 </Window>
