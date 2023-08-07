@@ -6,7 +6,7 @@ namespace SDKSample
     {
         public ControlTemplateButtonWindow()
         {
-            InitializeComponent();
+          
         }
 
         void button_Click(object sender, RoutedEventArgs e)
