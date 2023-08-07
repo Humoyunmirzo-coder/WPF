@@ -1,13 +1,7 @@
 ﻿using System.Windows;
-using static System.Net.Mime.MediaTypeNames;
-using System.Windows.Controls;
-using System.ComponentModel;
-using Microsoft.Win32;
-
+using WPF.Viuw1;
 namespace WPF
 {
-
-
     public partial class MainWindow : Window
     {
 
@@ -17,8 +11,17 @@ namespace WPF
             InitializeComponent();
 
         }
-
-      } 
- }
+        public void btnNormal_Click(object sender, RoutedEventArgs e)
+        {
+           Normal normal = new Normal();
+            normal.Show();
+        }
+        public void btnModal_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+        }
+    }
+}
 
 
