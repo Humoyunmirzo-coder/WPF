@@ -13,13 +13,11 @@ namespace WPF
         }
         public void btnNormal_Click(object sender, RoutedEventArgs e)
         {
-           Normal normal = new Normal();
-            normal.Show();
+           Close();
         }
         public void btnModal_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.ShowDialog();
+            Close();
         }
     }
 }
