@@ -1,22 +1,18 @@
-﻿using System.Windows;
-using WPF.Viuw1;
-namespace WPF
+﻿using System.Windows; // Window, RoutedEventArgs, MessageBox
+
+namespace SDKSample
 {
-    public partial class MainWindow : Window
+    public partial class ControlTemplateButtonWindow : Window
     {
-       
-            public MainWindow()
-            {
-                InitializeComponent();
-            }
+        public ControlTemplateButtonWindow()
+        {
+            InitializeComponent();
+        }
 
-            private void Button_Click(object sender, RoutedEventArgs e)
-            {
-                MessageBox.Show("Hello, world!");
-            }
-        
-
+        void button_Click(object sender, RoutedEventArgs e)
+        {
+            // Show message box when button is clicked
+            MessageBox.Show("Hello, Windows Presentation Foundation!");
+        }
     }
 }
-
-
