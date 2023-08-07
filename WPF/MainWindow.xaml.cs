@@ -1,18 +1,14 @@
 ﻿using System.Windows; // Window, RoutedEventArgs, MessageBox
+using System.Windows.Controls;
 
-namespace SDKSample
-{
-    public partial class ControlTemplateButtonWindow : Window
+
+
+    namespace SDKSample
     {
-        public ControlTemplateButtonWindow()
+        public partial class NumericUpDown : UserControl
         {
-          
-        }
-
-        void button_Click(object sender, RoutedEventArgs e)
-        {
-            // Show message box when button is clicked
-            MessageBox.Show("Hello, Windows Presentation Foundation!");
+            // NumericUpDown user control implementation
         }
     }
-}
+    
+   
