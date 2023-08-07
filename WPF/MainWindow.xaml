@@ -9,14 +9,18 @@
         Title="MainWindow" Height="400" Width="300">
     <Grid>
   
-        <StackPanel >
+      
+        <!--<StackPanel >
             <Button Name="btnNormal"   Width="100" Height="40" Content="Normal"  Margin="5" 
                     Click=" btnNormal_Click"/>
             <Button Name="btnModal"  Content="Modal" Width="100" Height="40" Margin="5" 
                     Click="btnModal_Click" />
             <TextBox Name="txtImput"  Width="200" Height="40" FontSize="20"/>
-            
-        </StackPanel>
+
+        </StackPanel> -->
+        <Grid>
+            <Button Content="Click me!" Click="Button_Click"/>
+        </Grid>
 
     </Grid> 
 </Window>

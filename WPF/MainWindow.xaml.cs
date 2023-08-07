@@ -4,21 +4,18 @@ namespace WPF
 {
     public partial class MainWindow : Window
     {
+       
+            public MainWindow()
+            {
+                InitializeComponent();
+            }
 
-        public MainWindow()
-        {
+            private void Button_Click(object sender, RoutedEventArgs e)
+            {
+                MessageBox.Show("Hello, world!");
+            }
+        
 
-            InitializeComponent();
-
-        }
-        public void btnNormal_Click(object sender, RoutedEventArgs e)
-        {
-           Close();
-        }
-        public void btnModal_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
     }
 }
 
