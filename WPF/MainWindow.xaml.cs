@@ -17,6 +17,11 @@ using System.Windows.Controls;
             {
                 throw new System.NotImplementedException();
             }
+
+            private void ContentElement_OnDrop(object sender, DragEventArgs e)
+            {
+                throw new System.NotImplementedException();
+            }
         }
     }
     
