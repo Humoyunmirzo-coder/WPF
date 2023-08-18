@@ -7,11 +7,11 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
-            <RowDefinition Drop="ContentElement_OnDrop" />
-        </Grid.RowDefinitions>
+            <RowDefinition Height="40" Drop="ContentElement_OnDrop" />
+        </Grid.RowDefinitions >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="40"  />
         </Grid.ColumnDefinitions>
 
         <!-- Value text box -->
